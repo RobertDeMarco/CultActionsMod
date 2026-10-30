@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3E7A1B4-5D92-4F0E-8B6A-2E91D4F7A305}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Arcen.HotM.ResearchCultAction</RootNamespace>
+    <AssemblyName>ResearchCultAction</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>..\ModdableLogicDLLs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Target Name="StripMicrosoftVisualBasic" BeforeTargets="ResolveReferences">
+    <ItemGroup>
+      <Reference Remove="Microsoft.VisualBasic" />
+    </ItemGroup>
+  </Target>
+  <ItemGroup>
+    <Compile Include="Sidebar_CultActionsResearch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Base runtime, from the game's ReliableDLLStorage (never copied to output) -->
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\ReliableDLLStorage\netstandard2.1\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\ReliableDLLStorage\netstandard2.1\mscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Arcen / HotM game code -->
+    <Reference Include="ArcenUniversal">
+      <HintPath>..\..\..\ReliableDLLStorage\ArcenDLLs\ArcenUniversal.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HotMCore">
+      <HintPath>..\..\..\ReliableDLLStorage\ArcenDLLs\HotMCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HotMVisualization">
+      <HintPath>..\..\..\ReliableDLLStorage\ArcenDLLs\HotMVisualization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HotMExternal0CommonCode">
+      <HintPath>..\..\..\ReliableDLLStorage\ArcenDLLs\HotMExternal0CommonCode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HotMExternalVisualizationCode">
+      <HintPath>..\..\..\ReliableDLLStorage\ArcenDLLs\HotMExternalVisualizationCode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Unity modules that HotMExternalVisualizationCode itself references -->
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\ReliableDLLStorage\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\ReliableDLLStorage\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\ReliableDLLStorage\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\ReliableDLLStorage\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\ReliableDLLStorage\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

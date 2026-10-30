@@ -1,0 +1,10 @@
+D:\ModsToDissect\ModstoMake\ScienceCult\_Code\obj\Debug\ResearchCultAction.csproj.AssemblyReference.cache
+D:\ModsToDissect\ModstoMake\ScienceCult\_Code\obj\Debug\ResearchCultAction.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\ScienceCult\_Code\obj\Debug\ResearchCultAction.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\ScienceCult\_Code\obj\Debug\ResearchCultAction.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\ScienceCult\ModdableLogicDLLs\ResearchCultAction.dll
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\ScienceCult\_Code\obj\Debug\ResearchCultAction.dll
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\CultActions\ModdableLogicDLLs\ResearchCultAction.dll
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\CultActions\_Code\obj\Debug\ResearchCultAction.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\CultActions\_Code\obj\Debug\ResearchCultAction.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\HeartOfTheMachine\XMLMods\CultActions\_Code\obj\Debug\ResearchCultAction.dll

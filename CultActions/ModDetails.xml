@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<mod_data ver="1" color_for_display="#E0556B" author="Cyberinit" is_framework_mod="false"
+		required_mods="" required_expansions=""/>
+
+	<lang id="English" name="Cult Activities" abbreviation="CA"
+		description="A simple mod that adds more activities for cults"
+		translation_note="I probably won't make a translation."/>
+
+
+
+</root>

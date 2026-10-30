@@ -1,0 +1,6 @@
+<root>
+<ui_sidebar_item id="StealthResearch" display_name="Steal Research" description="These people, for the most part, are not scientists. The effort to return ratio is not as good as most of the cults actions." dll_name="ResearchCultAction" type_name="CultActions.ExternalVis.Sidebar_CultActionsResearch" tags="CultActionsResources" icon_name="CleanSimple_SkillC004" icon_color="#2EAFFF" is_hidden_when_ui_is_hidden="true"/>
+
+<ui_sidebar_item id="OfferBrain" display_name="Offer Brains" description="Some of your cultists do not wish to spend their time in your VR environment, they offer their preserved brain to you to become a part of your conciousness, you have explained that they would be essentially hardware, but they are still willing." dll_name="ResearchCultAction" type_name="CultActions.ExternalVis.Sidebar_CultActionsResearch" tags="CultActionsResources" icon_name="CleanSimple_SkillC004" icon_color="#2EAFFF" is_hidden_when_ui_is_hidden="true"/>
+
+</root>
